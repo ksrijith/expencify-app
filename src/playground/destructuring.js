@@ -15,14 +15,23 @@
 // const { city, temp: temperature } = person.location;
 // console.log(`its ${temperature} in ${city}.`);
 
-const book = {
-    title: 'Ego is the Enemy',
-    author: 'Ryan Holiday',
-    publisher: {
-        name: 'Penguin'
-    }
-};
+// const book = {
+//     title: 'Ego is the Enemy',
+//     author: 'Ryan Holiday',
+//     publisher: {
+//         name: 'Penguin'
+//     }
+// };
 
-const {name: publisherName='Self Publish'} = book.publisher; 
+// const {name: publisherName='Self Publish'} = book.publisher; 
 
-console.log(publisherName);
+// console.log(publisherName);
+
+// Array Destructuring
+
+const address = ['1299 S Juniper Street', 'Blore', 'KA', '560043'];
+
+const [ street, city, state, zipcode ] = address;
+
+console.log(`You are in ${ city } ${ state }`);
+
